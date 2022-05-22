@@ -13,7 +13,7 @@
     <div class="row">
         <div class="column">
             <h1>BORANG</h1>
-            <form action="simpan.php" method="post" onsubmit="return borang()">
+            <form name="myForm" action="simpan.php" method="post" onsubmit="return borang()">
                 <table>
                     <tr>
                         <td><label for="name">NAMA:</label></td>
@@ -25,13 +25,13 @@
                             <textarea name="alamat" id="alamat" cols="20" rows="2"></textarea>
                         </td>
                     <tr>
-                        <td><label for="jantina" >Jantina:</label></td>
+                        <td><label for="jantina">Jantina:</label></td>
                         <td>
                             <label>
-                                <input type="radio" name="jantina" id="jantina" value="lelaki">Lelaki
+                                <input type="radio" id="lelaki" value="Lelaki">Lelaki
                             </label>
                             <label>
-                                <input type="radio" name="jantina" id="jantina" value="wanita">Wanita
+                                <input type="radio" id="wanita" value="Wanita">Wanita
                             </label>
                         </td>
                     </tr>
@@ -48,23 +48,32 @@
                     </tr>
                     <tr>
                         <td colspan="2" align="center">
-                            <button type="submit">SIMPAN</button>
+                            <button type="submit" onclick="checkButton()">SIMPAN</button>
                         </td>
                     </tr>
                 </table>
+            </p>
+                NORAQILAH BINTI AZMI </p>
+                ANIS SHAZLIANA BINTI ABD AZIZ</p>
+                HANI NADHIRA BINTI ABDUL AZIZ</p>
+                HANNAH ZAFIRAH BINTI ROSNEZAM</p>
+                NUR AZWA ALEEYA BINTI MOHD FAIZUL</p>
+                NURALIA AMANDA BINTI MOHAMAD AKHSAN</p>
             </form>
         </div>
 
+        <h3 id="disp" style="color:green"></h3>
+        <h4 id="error" style="color:red"></h4>
 
         <div class="column">
             <h1>BUTIRAN</h1>
             <p>NAMA : <span id="paparnama"></span></p>
             <P>ALAMAT : <span id="paparalamat"></span></P>
             <p>JANTINA : <span id="paparjantina"></span></p>
-            <P>NEGERI : <span id="paparbangsa"></span></P>
+            <P>BANGSA : <span id="paparbangsa"></span></P>
         </div>
-
-        <script src="butiran.js"></script>
+        <div <script src="butiran.js">
+            </script>
 
 </body>
 
