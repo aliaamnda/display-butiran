@@ -17,12 +17,12 @@
                 <table>
                     <tr>
                         <td><label for="name">NAMA:</label></td>
-                        <td><input type="text" name="nama" id="nama"></td>
+                        <td><input type="text" name="nama" id="nama" oninvalid="alert('Sila masukkan nama anda!');" required></td>
                     </tr>
                     <tr>
                         <td><label for="alamat">Alamat:</label></td>
                         <td>
-                            <textarea name="alamat" id="alamat" cols="20" rows="2"></textarea>
+                            <textarea name="alamat" id="alamat" oninvalid="alert('Sila masukkan alamat anda!');" required cols="20" rows="2"></textarea>
                         </td>
                     <tr>
                         <td><label for="jantina">Jantina:</label></td>
@@ -38,7 +38,7 @@
                     <tr>
                         <td><label for="bangsa">Bangsa:</label></td>
                         <td>
-                            <select name="bangsa" id="bangsa">
+                            <select name="bangsa" id="bangsa" oninvalid="alert('Sila pilih bangsa anda!');" required>
                                 <option value=""></option>
                                 <option value="Melayu">Melayu</option>
                                 <option value="Cina">Cina</option>
@@ -52,10 +52,9 @@
                         </td>
                     </tr>
                 </table>
-            </p>
+                </p>
                 NORAQILAH BINTI AZMI </p>
                 ANIS SHAZLIANA BINTI ABD AZIZ</p>
-                HANI NADHIRA BINTI ABDUL AZIZ</p>
                 HANNAH ZAFIRAH BINTI ROSNEZAM</p>
                 NUR AZWA ALEEYA BINTI MOHD FAIZUL</p>
                 NURALIA AMANDA BINTI MOHAMAD AKHSAN</p>
@@ -72,7 +71,7 @@
             <p>JANTINA : <span id="paparjantina"></span></p>
             <P>BANGSA : <span id="paparbangsa"></span></P>
         </div>
-        <div <script src="butiran.js">
+        <script src="butiran.js">
             </script>
 
 </body>

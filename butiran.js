@@ -1,3 +1,4 @@
+
 function borang() {
     let nama = document.getElementById("nama").value;
     document.getElementById("paparnama").innerHTML = nama;
@@ -20,29 +21,5 @@ function checkButton() {
     else {
         document.getElementById("error").innerHTML
         = "Sila pilih jantina";
-    }
-}
-
-function borang() {
-    let x = document.forms["myForms"]["nama"].value;
-    if(x=="") {
-        alert("Name must be filled out");
-        return false;
-    }
-}
-
-function borang() {
-    let x = document.forms["myForms"]["alamat"].value;
-    if(x=="") {
-        alert("Alamat must be filled out");
-        return false;
-    }
-}
-
-function borang() {
-    let x = document.forms["myForms"]["bangsa"].value;
-    if(x=="") {
-        alert("Bangsa must be filled out");
-        return false;
     }
 }
